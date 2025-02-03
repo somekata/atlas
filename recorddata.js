@@ -7059,7 +7059,7 @@ const recordData = [
     "imageSrc": "140-2.jpg"
   },
   {
-    "id": "140-3",
+    "id": "<img src='images/medal.png'>140-3",
     "caseId": "176",
     "imageType": "Gram染色（フェイバー法）",
     "medium": "",
@@ -9204,7 +9204,7 @@ const recordData = [
     "imageSrc": "178-2.jpg"
   },
   {
-    "id": "178-3",
+    "id": "<img src='images/medal.png'>178-3",
     "caseId": "135",
     "imageType": "コロニー・培地写真",
     "medium": "サブロー(SDA)寒天培地",

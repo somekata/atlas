@@ -4229,7 +4229,7 @@ const caseData = [
     "recordIds": [
       "140-1",
       "140-2",
-      "140-3",
+      "<img src='images/medal.png'>140-3",
       "140-4"
     ]
   },
@@ -5380,7 +5380,7 @@ const caseData = [
     "recordIds": [
       "178-1",
       "178-2",
-      "178-3",
+      "<img src='images/medal.png'>178-3",
       "178-4",
       "178-5"
     ]
