@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem; /* ボタンサイズを調整 */
+    border: none;
+    background: linear-gradient(90deg, #007BFF, #0056b3); /* グラデーション */
+    color: white;
+    font-size: 1rem; /* フォントサイズを大きく */
+    font-weight: bold; /* 太字で視認性を向上 */
+    cursor: pointer;
+    border-radius: 8px; /* ボタンの角を丸く */
+    transition: all 0.3s ease-in-out; /* 滑らかなアニメーション */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #0056b3, #003f7f); /* ホバー時の色を変更 */
+    transform: translateY(-2px); /* ホバー時に少し浮かせる */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* 影を強調 */
+  }
+  
+  button:active {
+    transform: translateY(2px); /* クリック時に沈む効果 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 影を小さく */
+  }  
+  
+  table {
+    width: calc(100% - 20px); /* テーブル幅を全体から10pxずつ引く */
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-left:10px;
+    margin-right: 10px;;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  table tr:hover {
+    background-color: #f0f8ff; /* ホバー時の背景色 */
+    transition: background-color 0.3s ease; /* 滑らかな変化 */
+  }
+  
+  table td {
+    padding: 8px;
+    border: 1px solid #ccc; /* セルの境界線 */
+  }
+  
+  
+  .thumbnail {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #fff;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  .record-detail {
+    margin-top: 12px;
+    padding: 12px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .record-detail img {
+    margin-top: 8px;
+    max-width: 100%;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 16px 0;
+  }
+  
+  h1.atlas {
+    margin: 10px;
+    float: left;
+  }
+
+  img#org_name {
+    margin-left: 30px;
+  }
+
+  div.blueback {
+    background-color: #007BFF;
+    height:150px;
+  }
+
+/* フィルタ全体のスタイル */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* 各要素の間に隙間を追加 */
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa; /* 背景色を淡いグレーに */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+  margin-bottom: 1rem;
+}
+
+/* サーチバー */
+#search-bar {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* フォーカス時の青い影 */
+}
+
+/* セレクトボックス */
+#search-field {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: white;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* ボタン */
+button {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* ホバー時に軽く浮かせる */
+}
+
+button:active {
+  background-color: #003f7f;
+  transform: translateY(1px); /* クリック時に沈む効果 */
+}
+
+div.instruction {
+  margin:20px;
+}
+
+footer {
+	text-align: center;
+	font-size: .9rem;
+	background:#3d444e;
+	color:white;
+	padding:10px;
+}
+
+h1.instructionTitle {
+  font-family: 'Arial', sans-serif; /* モダンなフォント */
+  font-size: 2rem; /* 見やすい大きさ */
+  font-weight: bold; /* 太字で目立たせる */
+  color: #333; /* 落ち着いた色合い */
+  text-align: center; /* 中央揃え */
+  padding: 1rem; /* 上下の余白を追加 */
+  margin: 1rem auto; /* 上下の余白、中央配置 */
+  border-bottom: 2px solid #007BFF; /* 下線を追加してアクセント */
+  background: linear-gradient(90deg, #f8f9fa, #e9ecef); /* 背景にグラデーション */
+  border-radius: 8px; /* 角を丸くして柔らかい印象に */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影をつけて立体感 */
+  max-width: 80%; /* 幅を制限して中央に配置 */
+}

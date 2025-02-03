@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>臨床微生物アトラス</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="top.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <div class="blueback">
+          <h1 class="atlas">
+            <a href="index.html"
+              ><img
+                src="https://www.jscm.org/atlas/img/title.png"
+                alt="臨床微生物アトラス"
+            /></a>
+            <a href="http://www.jscm.org/" target="_blank"
+              ><img
+                id="org_name"
+                src="https://www.jscm.org/atlas/img/orgname.png"
+                alt="一般社団法人日本臨床微生物学会"
+            /></a>
+          </h1>
+        </div>
+      </section>
+      <a href="atlasinstruction.html" style="clear: both"
+        ><button>本機能についてのご説明</button></a
+      >
+      <div id="view-toggle" style="clear: both">
+        <button onclick="setView('table')">表形式で表示</button>
+        <button onclick="setView('vertical')">縦形式で表示</button>
+      </div>
+      <div id="data-toggle">
+        <button onclick="setDataMode('case')">症例別に表示</button>
+        <button onclick="setDataMode('record')">写真別に表示</button>
+      </div>
+
+      <div id="filters">
+        <input
+          type="text"
+          id="search-bar"
+          placeholder="キーワードや番号を入力してください"
+        />
+        <select id="search-field">
+          <option value="caseId">症例番号</option>
+          <option value="id">掲載番号</option>
+          <option value="diseaseName">疾患名</option>
+          <option value="imageType">写真の種類</option>
+          <option value="pathogen">病原体</option>
+          <option value="all">全項目</option>
+          <!-- 全ての項目を検索 -->
+        </select>
+        <button onclick="applySearch()">絞り込み</button>
+        <button onclick="clearSearch()">条件クリア</button>
+      </div>
+    </header>
+    <main>
+      <div id="data-view"></div>
+    </main>
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-image" />
+    </div>
+    <div id="scrollToTop" style="display: none">
+      <img src="img/top.png" alt="Top" id="topImage" />
+    </div>
+    <footer>
+      Copyright &copy; 一般社団法人 日本臨床微生物学会 all rights reserved.
+    </footer>
+    <script src="categorydata.js"></script>
+    <script src="casedata.js"></script>
+    <script src="recorddata.js"></script>
+    <script src="script.js"></script>
+    <script src="top.js"></script>
+  </body>
+</html>
