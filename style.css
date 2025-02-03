@@ -139,6 +139,23 @@ body {
     float: left;
   }
 
+  /* .atlas内の画像だけを対象にする */
+  .atlas img {
+    max-width: 100%;  /* 親要素の幅に収める */
+    height: auto;     /* 縦横比を維持する */
+    display: inline-block;  /* インラインで中央寄せしやすくする */
+    vertical-align: middle; /* テキストとの垂直位置を調整 */
+  }
+
+  /* スマホ用のメディアクエリでさらに調整 */
+  @media (max-width: 600px) {
+    .atlas img {
+      max-width: 80%;  /* スマホでは少し余白を残す */
+      margin: 0 auto;  /* 中央寄せ */
+    }
+  }  
+
+
   img#org_name {
     margin-left: 30px;
   }
