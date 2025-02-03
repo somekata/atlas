@@ -123,10 +123,10 @@ function renderTable(data) {
         .map(recordId => {
           const record = recordData.find(r => r.id === recordId);
           return `
-            <img src="https://fa.kyorin.co.jp/jscm/atlas/${record.imageSrc}" 
-                 class="thumbnail" 
-                 onclick="enlargeImage('https://fa.kyorin.co.jp/jscm/atlas/${record.imageSrc}')" 
-                 alt="${record.imageType}">
+            <img src="thumbnail/${record.imageSrc.replace('.jpg', '_sm.jpg')}" 
+     class="thumbnail" 
+     onclick="enlargeImage('https://fa.kyorin.co.jp/jscm/atlas/${record.imageSrc}')" 
+     alt="${record.imageType}">
           `;
         })
         .join('');
