@@ -123,7 +123,7 @@ function renderTable(data) {
         .map(recordId => {
           const record = recordData.find(r => r.id === recordId);
           return `
-            <img src="thumbnail/${record.imageSrc.replace('.jpg', '_sm.jpg')}" 
+            <img src="thumbnail2/${record.imageSrc.replace('.jpg', '_sm.jpg')}" 
      class="thumbnail" 
      onclick="enlargeImage('https://fa.kyorin.co.jp/jscm/atlas/${record.imageSrc}')" 
      alt="${record.imageType}">
