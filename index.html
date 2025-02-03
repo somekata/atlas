@@ -42,15 +42,15 @@
         <input
           type="text"
           id="search-bar"
-          placeholder="キーワードや番号を入力してください"
+          placeholder="キーワードや番号を入力してください。大文字・小文字は区別しません。全角・半角は区別します。"
         />
         <select id="search-field">
+          <option value="all">全項目</option>
           <option value="caseId">症例番号</option>
           <option value="id">掲載番号</option>
           <option value="diseaseName">疾患名</option>
           <option value="imageType">写真の種類</option>
           <option value="pathogen">病原体</option>
-          <option value="all">全項目</option>
           <!-- 全ての項目を検索 -->
         </select>
         <button onclick="applySearch()">絞り込み</button>
