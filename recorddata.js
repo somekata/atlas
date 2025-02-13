@@ -21,7 +21,7 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "",
     "caseBranchId": "2",
-    "comment": "コロニー外観：溶血性あり、黄色コロニー。典型的なS. aureus",
+    "comment": "コロニー外観：溶血性あり、黄色コロニー。典型的な黄色ブドウ球菌", //S. aureusから黄色ブドウ球菌に変更（20250213）
     "commentEn": "Bacterial colonies Images : Sheep blood agar/Drigalski Lactose Agar(BTB agar) : aerobic culture : 35℃ : Typical <i>Staphylococcus aureus</i> colonies. ",
     "imageSrc": "1-2.jpg"
   },
@@ -73,7 +73,7 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "",
     "caseBranchId": "3",
-    "comment": "左：約24時間培養、右：約48時間培養。発育がやや遅く非典型的な菌種も想定したが、最終的な同定結果はS.aureus(MRSA)となった。",
+    "comment": "左：約24時間培養、右：約48時間培養。発育がやや遅く非典型的な菌種も想定したが、最終的な同定結果はメチシリン耐性黄色ブドウ球菌(MRSA)となった。",//S.aureus(MRSA)からメチシリン耐性黄色ブドウ球菌(MRSA)に変更（20250213）
     "commentEn": "Bacterial colonies Images : Sheep blood agar : capneic incubation : 35℃ : Left: 24 hours, right: 48 hours.",
     "imageSrc": "1-6.jpg"
   },
@@ -190,7 +190,7 @@ const recordData = [
     "cultureTemperature": "36℃",
     "cultureDuration": "24hours",
     "caseBranchId": "2",
-    "comment": "生化学性状や病原性はS.aureusに類似している",
+    "comment": "生化学性状や病原性は黄色ブドウ球菌に類似している",//S.aureusから黄色ブドウ球菌に変更（20250213）
     "commentEn": "Bacterial colonies Images : Sheep blood agar : aerobic culture : 36℃ : 24hours.",
     "imageSrc": "3-2.jpg"
   },
@@ -229,7 +229,7 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "24hours",
     "caseBranchId": "2",
-    "comment": "5％ヒツジ血液寒天培地上の<i>Staphylococcus aureus</i>（左：黄色コロニー）とStaphylococcu pseudintermedius（右：白色コロニー）",
+    "comment": "5％ヒツジ血液寒天培地上の<i>Staphylococcus aureus</i>（左：黄色コロニー）と<i>Staphylococcu pseudintermedius</i>（右：白色コロニー）",
     "commentEn": "Bacterial colonies Images : Sheep blood agar : capneic incubation : 35℃ : 24hours.",
     "imageSrc": "4-2.jpg"
   },
@@ -242,8 +242,8 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "48hours",
     "caseBranchId": "3",
-    "comment": "Staphylococcu pseudintermediusは黄色色素を産生しない\r\n\r\nミュラーヒントン寒天培地上の<i>Staphylococcus aureus</i>（黄色コロニー）とStaphylococcu pseudintermedius（白色コロニー）",
-    "commentEn": "Bacterial colonies Images : Mueller-Hinton agar : aerobic culture : 35℃ : 48hours.\r\n<i>Staphylococcus aureus</i>（yellow colonies)\r\nStaphylococcu pseudintermedius（white colonies）",
+    "comment": "<i>Staphylococcu pseudintermedius</i>は黄色色素を産生しない\r\n\r\nミュラーヒントン寒天培地上の<i>Staphylococcus aureus</i>（黄色コロニー）とStaphylococcu pseudintermedius（白色コロニー）",
+    "commentEn": "Bacterial colonies Images : Mueller-Hinton agar : aerobic culture : 35℃ : 48hours.\r\n<i>Staphylococcus aureus</i>（yellow colonies)\r\n<i>Staphylococcu pseudintermedius</i>（white colonies）",
     "imageSrc": "4-3.jpg"
   },
   {
@@ -255,8 +255,8 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "4",
-    "comment": "スワブでコロニーを掻き取り色素を確認\r\nStaphylococcu pseudintermedius（白色）と<i>Staphylococcus aureus</i>（黄色）",
-    "commentEn": "Confirmation test : Staphylococcu pseudintermedius(left), <i>Staphylococcus aureus</i>（right : yellow pigment）.",
+    "comment": "スワブでコロニーを掻き取り色素を確認\r\n<i>Staphylococcu pseudintermedius</i>（白色）と<i>Staphylococcus aureus</i>（黄色）",
+    "commentEn": "Confirmation test : <i>Staphylococcu pseudintermedius</i> (left), <i>Staphylococcus aureus</i>（right : yellow pigment）.",
     "imageSrc": "4-4.jpg"
   },
   {
@@ -1360,7 +1360,7 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "24hours",
     "caseBranchId": "1",
-    "comment": "Enterococcus様のα溶血のスムースコロニー",
+    "comment": "<i>Enterococcus</i>様のα溶血のスムースコロニー",
     "commentEn": "Bacterial colonies Images : Sheep blood agar : capneic incubation : 35℃ : 24hours.",
     "imageSrc": "20-1.jpg"
   },
@@ -1503,7 +1503,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "1",
-    "comment": "Staphylococcus属に類似したクラスター状のグラム陽性球菌である。血液培養から検出された場合、侵入門戸は泌尿生殖器系が疑われる。",
+    "comment": "<i>Staphylococcus</i>属に類似したクラスター状のグラム陽性球菌である。血液培養から検出された場合、侵入門戸は泌尿生殖器系が疑われる。",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) of blood culture specimen.",
     "imageSrc": "24-2.jpg"
   },
@@ -1516,7 +1516,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "2",
-    "comment": "クラスター状のグラム陽性球菌である。泌尿器疾患のあるADLの低下した高齢者の尿にグラム陽性球菌を認めた場合、クラスター状か連鎖状かの情報はAerococcus属菌を同定する上で重要である。",
+    "comment": "クラスター状のグラム陽性球菌である。泌尿器疾患のあるADLの低下した高齢者の尿にグラム陽性球菌を認めた場合、クラスター状か連鎖状かの情報は<i>Aerococcus</i>属菌を同定する上で重要である。",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) of a 24hours culture grown on Sheep blood agar.",
     "imageSrc": "24-3.jpg"
   },
@@ -1529,7 +1529,7 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "24hours",
     "caseBranchId": "1",
-    "comment": "ヒツジ血液寒天培地で24時間35℃5%CO2培養を実施。α溶血が弱く、Enterococcus属様の透明～白色コロニーを形成する。同定キットでA. urinaeやA. viridansに誤同定される。",
+    "comment": "ヒツジ血液寒天培地で24時間35℃5%CO2培養を実施。α溶血が弱く、<i>Enterococcus</i>属様の透明～白色コロニーを形成する。同定キットでA. urinaeやA. viridansに誤同定される。",
     "commentEn": "Bacterial colonies Images : Sheep blood agar : capneic incubation : 35℃ : 24hours.",
     "imageSrc": "25-1.jpg"
   },
@@ -1542,7 +1542,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "2",
-    "comment": "クラスター状のグラム陽性球菌である。泌尿器疾患のあるADLの低下した高齢者の尿にグラム陽性球菌を認めた場合、クラスター状か連鎖状かの情報はAerococcus属菌を同定する上で重要である。",
+    "comment": "クラスター状のグラム陽性球菌である。泌尿器疾患のあるADLの低下した高齢者の尿にグラム陽性球菌を認めた場合、クラスター状か連鎖状かの情報は<i>Aerococcus</i>属菌を同定する上で重要である。",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) of urine specimen.",
     "imageSrc": "25-2.jpg"
   },
@@ -1555,7 +1555,7 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "",
     "caseBranchId": "2",
-    "comment": "Enterococcus属やγｰStreptococcus様のγ溶血コロニー",
+    "comment": "<i>Enterococcus</i>属やγｰ<i>Streptococcus</i>様のγ溶血コロニー",
     "commentEn": "Bacterial colonies Images : Sheep blood agar : capneic incubation : 35℃.",
     "imageSrc": "26-1.jpg"
   },
@@ -1685,7 +1685,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "2",
-    "comment": "5%ヒツジ血液寒天培地での衛星現象　S.aureusの周りにのみ発育する（24時間、36℃炭酸ガス培養）",
+    "comment": "5%ヒツジ血液寒天培地での衛星現象　黄色ブドウ球菌の周りにのみ発育する（24時間、36℃炭酸ガス培養）",//S.aureusを黄色ブドウ球菌に変更（20250213）
     "commentEn": "Confirmation test : satellite phenomenon.",
     "imageSrc": "28-5.jpg"
   },
@@ -4727,7 +4727,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "2",
-    "comment": "グラム陰性の球菌状の菌体だが、一部陽性球菌に染まっている箇所もありAcinetobacterと推定される。",
+    "comment": "グラム陰性の球菌状の菌体だが、一部陽性球菌に染まっている箇所もあり<i>Acinetobacter</i>と推定される。",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) : sputum : intracellular Gram- negative coccobacillary cells. ",
     "imageSrc": "90-5.jpg"
   },
@@ -4741,7 +4741,7 @@ const recordData = [
     "cultureDuration": "24hours",
     "caseBranchId": "1",
     "comment": "黄色色素を産生し独特のコロニーを形成する。",
-    "commentEn": "Bacterial colonies Images : Sheep blood agar : aerobic culture : 36℃ : 24hours : Chryserobacterium indologenes is a yellow pigmented, Gram-negative filamentous, non-motile rod.",
+    "commentEn": "Bacterial colonies Images : Sheep blood agar : aerobic culture : 36℃ : 24hours : <i>Chryserobacterium indologenes</i> is a yellow pigmented, Gram-negative filamentous, non-motile rod.",
     "imageSrc": "91-1.jpg"
   },
   {
@@ -4754,7 +4754,7 @@ const recordData = [
     "cultureDuration": "24hours",
     "caseBranchId": "2",
     "comment": "黄色色素を産生し独特のコロニーを形成する。",
-    "commentEn": "Bacterial colonies Images : Sheep blood agar : aerobic culture : 36℃ : 24hours : Chryserobacterium indologenes is a yellow pigmented, Gram-negative filamentous, non-motile rod.",
+    "commentEn": "Bacterial colonies Images : Sheep blood agar : aerobic culture : 36℃ : 24hours : <i>Chryserobacterium indologenes</i> is a yellow pigmented, Gram-negative filamentous, non-motile rod.",
     "imageSrc": "91-2.jpg"
   },
   {
@@ -5624,7 +5624,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "1",
-    "comment": "グラム陰性桿菌で細長く、嫌気性（Fusobacterium）やHamophilus属と類似した形態である。",
+    "comment": "グラム陰性桿菌で細長く、嫌気性（<i>Fusobacterium</i>）や<i>Hamophilus</i>属と類似した形態である。",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) : Gram negative bacilli.",
     "imageSrc": "109-2.jpg"
   },
@@ -5884,7 +5884,7 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "48hours",
     "caseBranchId": "2",
-    "comment": "コロニー外見：ブルセラHK寒天培地に48時間、嫌気培養を実施した。コロニーはEikenella属菌のようなcorroding様集落を形成する。Campylobacter属菌であるが嫌気培養で発育する。",
+    "comment": "コロニー外見：ブルセラHK寒天培地に48時間、嫌気培養を実施した。コロニーはEikenella属菌のようなcorroding様集落を形成する。<i>Campylobacter</i>属菌であるが嫌気培養で発育する。",
     "commentEn": "Bacterial colonies Images : Brucella HK RS blood agar : anaerobiotic culture : 35℃ : 48hours.",
     "imageSrc": "115-1.jpg"
   },
@@ -5897,7 +5897,7 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "48hours",
     "caseBranchId": "3",
-    "comment": "コロニー外見：ブルセラHK寒天培地に48時間、嫌気培養を実施した。コロニーはEikenella属菌のようなcorroding様集落を形成する。Campylobacter属菌であるが嫌気培養で発育する。",
+    "comment": "コロニー外見：ブルセラHK寒天培地に48時間、嫌気培養を実施した。コロニーはEikenella属菌のようなcorroding様集落を形成する。<i>Campylobacter</i>属菌であるが嫌気培養で発育する。",
     "commentEn": "Bacterial colonies Images : Brucella HK RS blood agar : anaerobiotic culture : 35℃ : 48hours.",
     "imageSrc": "115-2.jpg"
   },
@@ -5910,7 +5910,7 @@ const recordData = [
     "cultureTemperature": "35℃",
     "cultureDuration": "48hours",
     "caseBranchId": "1",
-    "comment": "写真はコロニーからグラム染色したものである。Campylobacter属菌であるが、グラム陰性桿菌である。",
+    "comment": "写真はコロニーからグラム染色したものである。<i>Campylobacter</i>属菌であるが、グラム陰性桿菌である。",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) of a 48hours culture grown on Brucella HK RS blood agar.",
     "imageSrc": "115-3.jpg"
   },
@@ -5976,7 +5976,7 @@ const recordData = [
     "cultureDuration": "",
     "caseBranchId": "1",
     "comment": "Gram陰性の細長いらせん菌",
-    "commentEn": "Gram Stain of blood culture specimen.\r\ngenus Helicobacter show curved spiral (S-shape) or fusiform rods.",
+    "commentEn": "Gram Stain of blood culture specimen.\r\ngenus <i>Helicobacter</i> show curved spiral (S-shape) or fusiform rods.",
     "imageSrc": "116-5.jpg"
   },
   {
@@ -6002,7 +6002,7 @@ const recordData = [
     "cultureDuration": "5days",
     "caseBranchId": "3",
     "comment": "コロニーからのグラム染色像、染まりが薄く長めのらせん形態。",
-    "commentEn": "Gram Stain of a 5days culture grown on Sheep blood agar : genus Helicobacter show curved spiral (S-shape) or fusiform rods.",
+    "commentEn": "Gram Stain of a 5days culture grown on Sheep blood agar : genus <i>Helicobacter</i> show curved spiral (S-shape) or fusiform rods.",
     "imageSrc": "116-7.jpg"
   },
   {
@@ -6015,7 +6015,7 @@ const recordData = [
     "cultureDuration": "",
     "caseBranchId": "2",
     "comment": "コルクスクリュー様運動を示す細長いらせん菌",
-    "commentEn": "Fresh preparate examination method of blood culture specimen.\r\ngenus Helicobacter show curved spiral (S-shape) or fusiform rods.",
+    "commentEn": "Fresh preparate examination method of blood culture specimen.\r\ngenus <i>Helicobacter</i> show curved spiral (S-shape) or fusiform rods.",
     "imageSrc": "116-8.jpg"
   },
   {
@@ -7275,7 +7275,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "1",
-    "comment": "多核白血球に貪食された<i>Candida albicans</i>\r\n\r\n解説：多核白血球が多数あり炎症像を反映している。グラム陽性の酵母様真菌が多数確認され、酵母の菌体は丸みがあり、一部仮性菌糸の確認もあることから<i>Candida albicans</i>を疑う。酵母の一部は貪食されていることから上部尿路感染症の可能性を示唆することができる。尿中では白血球の貪食能が落ちるが貪食旺盛であること、グラム陰性桿菌やEnterococcusを疑う一般的な尿路感染症の原因菌がグラム染色所見で確認されないことを考慮し、C. albicansの上部尿路感染症の可能性について報告した。\r\n\r\n報告後：腫瘍による尿管閉塞が原因による急性腎盂腎炎と診断されていたが、原因菌がC. albicansを疑うことよりfos-FLCZを追加投与した。後日同時採取した血液培養が陽性になりC. albicansが検出された。",
+    "comment": "多核白血球に貪食された<i>Candida albicans</i>\r\n\r\n解説：多核白血球が多数あり炎症像を反映している。グラム陽性の酵母様真菌が多数確認され、酵母の菌体は丸みがあり、一部仮性菌糸の確認もあることから<i>Candida albicans</i>を疑う。酵母の一部は貪食されていることから上部尿路感染症の可能性を示唆することができる。尿中では白血球の貪食能が落ちるが貪食旺盛であること、グラム陰性桿菌や<i>Enterococcus</i>を疑う一般的な尿路感染症の原因菌がグラム染色所見で確認されないことを考慮し、<i>C. albicans</i>の上部尿路感染症の可能性について報告した。\r\n\r\n報告後：腫瘍による尿管閉塞が原因による急性腎盂腎炎と診断されていたが、原因菌が<i>C. albicans</i>を疑うことよりfos-FLCZを追加投与した。後日同時採取した血液培養が陽性になり<i>C. albicans</i>が検出された。",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) of urine specimen.\r\n<i>Candida albicans</i> phagocytosed by polymorphonuclear leukocytes.",
     "imageSrc": "144-4.jpg"
   },
@@ -10109,7 +10109,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "1",
-    "comment": "尿路閉塞後にカテーテルにより開放され採取された尿\r\n\r\n解説：グラム陰性桿菌は菌の幅が広く、単一で直列になっていることから腸内細菌科の可能性が高い。グラム陽性球菌（右側集塊）は小型のブドウ状でStaphylococcusまたあAerococcusを疑う。グラム陽性桿菌は中型から大型の桿菌があり、一部湾曲し松葉状のものもあるためLactobacillusやBifidobacterium、または嫌気性菌の可能性がある。多核白血球が確認され膿尿であることと菌が複数大量に検出されること、閉塞機転があり尿が長期間停留しているため嫌気性菌の存在もあることを伝えた。グラム染色所見を含めて微生物検査では原因菌を絞り込むことが難しいため、検出菌をどこまで報告（感受性が必要かも含めて）するか報告時に相談した。\r\n\r\n報告後：嫌気培養は不要で、グラム陰性桿菌は感受性を含めて菌名報告をすることとし、グラム陽性桿菌は菌種のみ報告、グラム陽性球菌はAerococccusの場合は同定感受性を実施することとなった。\r\n",
+    "comment": "尿路閉塞後にカテーテルにより開放され採取された尿\r\n\r\n解説：グラム陰性桿菌は菌の幅が広く、単一で直列になっていることから腸内細菌科の可能性が高い。グラム陽性球菌（右側集塊）は小型のブドウ状で<i>Staphylococcus</i>またあ<i>Aerococcus</i>を疑う。グラム陽性桿菌は中型から大型の桿菌があり、一部湾曲し松葉状のものもあるため<i>Lactobacillus</i>や<i>Bifidobacterium</i>、または嫌気性菌の可能性がある。多核白血球が確認され膿尿であることと菌が複数大量に検出されること、閉塞機転があり尿が長期間停留しているため嫌気性菌の存在もあることを伝えた。グラム染色所見を含めて微生物検査では原因菌を絞り込むことが難しいため、検出菌をどこまで報告（感受性が必要かも含めて）するか報告時に相談した。\r\n\r\n報告後：嫌気培養は不要で、グラム陰性桿菌は感受性を含めて菌名報告をすることとし、グラム陽性桿菌は菌種のみ報告、グラム陽性球菌は<i>Aerococccus</i>の場合は同定感受性を実施することとなった。\r\n",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) of urine specimen.\r\nUrine collected by catheter after urinary obstruction.",
     "imageSrc": "197-5.jpg"
   },
@@ -10122,7 +10122,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "1",
-    "comment": "複数菌の確認により二次性腹膜炎を推定\r\n\r\n解説：下腹部痛で来院した患者で腹部CT上では腹水貯留のみが確認されていた。腹膜炎を疑う腹水が提出されグラム染色を実施したところ、2種類のグラム陰性桿菌が確認された。１つは紡錘状の淡赤色グラム陰性桿菌（黒矢印）でFusobacteriumを疑い、もう一方は長短多形のグラム陰性桿菌（赤矢印）でPrevotellaもしくはBacteroidesを疑う所見として報告した。複数菌検出があることから二次性腹膜炎の可能性について追加コメントをした。\r\n\r\n報告後：腹部CTで穿孔を疑う所見の確認がないため、当初は産婦人科で特発性腹膜炎として対応されていたが、２菌種確認されたことで二次性腹膜炎の可能性を示唆し、外科へ転科となり緊急手術となった。手術で腸穿孔が確認された。",
+    "comment": "複数菌の確認により二次性腹膜炎を推定\r\n\r\n解説：下腹部痛で来院した患者で腹部CT上では腹水貯留のみが確認されていた。腹膜炎を疑う腹水が提出されグラム染色を実施したところ、2種類のグラム陰性桿菌が確認された。１つは紡錘状の淡赤色グラム陰性桿菌（黒矢印）で<i>Fusobacterium</i>を疑い、もう一方は長短多形のグラム陰性桿菌（赤矢印）でPrevotellaもしくはBacteroidesを疑う所見として報告した。複数菌検出があることから二次性腹膜炎の可能性について追加コメントをした。\r\n\r\n報告後：腹部CTで穿孔を疑う所見の確認がないため、当初は産婦人科で特発性腹膜炎として対応されていたが、２菌種確認されたことで二次性腹膜炎の可能性を示唆し、外科へ転科となり緊急手術となった。手術で腸穿孔が確認された。",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) of ascites fluid specimen.\r\nSecondary peritonitis is estimated from the presence of multiple bacteria.",
     "imageSrc": "197-6.jpg"
   },
@@ -10135,7 +10135,7 @@ const recordData = [
     "cultureTemperature": "",
     "cultureDuration": "",
     "caseBranchId": "1",
-    "comment": "三次性腹膜炎\r\n\r\n解説：大腸がん術後7日目の患者。術後経過も良く抗菌薬（CMZ)も予定通り終了する予定であったが、５日目を過ぎても発熱が持続している。遺残膿瘍も明らかなものは見られずに術野周囲にはわずかな液体貯留のみ確認される。血液培養も２日目で陰性であり、腹水培養が提出となった。腹水からは中型のグラム陰性桿菌が確認され腸内細菌科またはBacteroidesを疑う。グラム陽性短連鎖の球菌が確認されEnterococcusを疑うことを報告。三次性腹膜炎の可能性について示唆する所見と報告した。CMZ無効と考えて抗菌薬処方がグラム染色所見により選択されることとなった。がん患者であること、CMZの効果が悪いことから腸内細菌科であればEnterobacter、嫌気性菌であればBacteroidesを疑い、グラム陽性球菌は円形でやや大きいためE. faeciumを疑うことを念頭に詳細な報告をした。\r\n\r\n報告後：液貯留も少なく、開腹手術を行わず、抗菌薬のみで治療継続となった。がん患者であることからCAZ＋MNZ＋VCMで開始することとなった。",
+    "comment": "三次性腹膜炎\r\n\r\n解説：大腸がん術後7日目の患者。術後経過も良く抗菌薬（CMZ)も予定通り終了する予定であったが、５日目を過ぎても発熱が持続している。遺残膿瘍も明らかなものは見られずに術野周囲にはわずかな液体貯留のみ確認される。血液培養も２日目で陰性であり、腹水培養が提出となった。腹水からは中型のグラム陰性桿菌が確認され腸内細菌科またはBacteroidesを疑う。グラム陽性短連鎖の球菌が確認され<i>Enterococcus</i>を疑うことを報告。三次性腹膜炎の可能性について示唆する所見と報告した。CMZ無効と考えて抗菌薬処方がグラム染色所見により選択されることとなった。がん患者であること、CMZの効果が悪いことから腸内細菌科であれば<i>Enterobacter</i>、嫌気性菌であれば<i>Bacteroides</i>を疑い、グラム陽性球菌は円形でやや大きいため<i>E. faecium</i>を疑うことを念頭に詳細な報告をした。\r\n\r\n報告後：液貯留も少なく、開腹手術を行わず、抗菌薬のみで治療継続となった。がん患者であることからCAZ＋MNZ＋VCMで開始することとなった。",
     "commentEn": "Gram Stain (Bartholomew & Mittwer : B&M) of ascites fluid specimen.\r\nTertiary peritonitis.",
     "imageSrc": "197-7.jpg"
   },
